@@ -1,0 +1,9 @@
+/******************************************************************************
+ *               Center SVG images - CSS-Styles (background)                  *
+ ******************************************************************************/
+svg {
+    background-color: #222222;
+    background-image: url("chrome://global/skin/media/imagedoc-darknoise.png");
+    background-origin: padding-box;
+    background-size: auto auto;
+}
