@@ -1,7 +1,20 @@
 /******************************************************************************
- *               Center SVG images - CSS-Styles (background)                  *
+ *                  Center SVG images - CSS-Styles                            *
  ******************************************************************************/
-svg {
+ svg.centersvg_centered {
+    bottom: 0;
+    height: auto;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    vertical-align: middle;
+    width: auto;
+}
+
+svg.centersvg_background {
     background-color: #222222;
     background-image: url("chrome://global/skin/media/imagedoc-darknoise.png");
     background-origin: padding-box;
