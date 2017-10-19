@@ -16,16 +16,16 @@
         <p class="browser-style"><label><input type="checkbox" id="show_backdrop">Show background</label></p>
         <p><label>Default zoom level: </label>
             <select id="default_zoom" class="browser-style">
-                <option>50%</option>
-                <option>75%</option>
-                <option>100%</option>
-                <option>125%</option>
-                <option>150%</option>
-                <option>200%</option>
-                <option>300%</option>
-                <option>400%</option>
-                <option id="automatic" selected>Automatic</option>
-                <option id="custom">Custom...</option>
+                <option data-zoom="0.5">50%</option>
+                <option data-zoom="0.75">75%</option>
+                <option data-zoom="1.0">100%</option>
+                <option data-zoom="1.25">125%</option>
+                <option data-zoom="1.5">150%</option>
+                <option data-zoom="2.0">200%</option>
+                <option data-zoom="3.0">300%</option>
+                <option data-zoom="4.0">400%</option>
+                <option id="automatic" selected data-automatic>Automatic</option>
+                <option id="custom" data-custom>Custom...</option>
             </select>
             <label id="custom_zoom_input" style="display: none;"><input type="number" value="100" min="1" id="custom_zoom" style="width: 50px;"/> %</label>
             <label>of screen size.</label>

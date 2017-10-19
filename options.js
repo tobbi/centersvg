@@ -12,18 +12,18 @@ let idxToZoomTable = {
 };
 
 function selectedIndexToZoomLevel() {
-    let zoom_select = document.getElementById("default_zoom");
-    let idx = zoom_select.selectedIndex;
-    var zoom_level = 1.0;
-    if(idx <= 7)
+    let select = document.getElementById("default_zoom");
+    let idx = select.selectedIndex;
+    let option = select.options[idx];
+    if(option.hasAttribute("data-zoom"))
     {
-        zoom_level = idxToZoomTable[idx];
+        return option.getAttribute("data-zoom");
     }
-    else if(idx == 9)
+    else if(option.hasAttribute("data-custom"))
     {
-        zoom_level = document.getElementById("custom_zoom").value / 100
+        return document.getElementById("custom_zoom").value / 100;
     }
-    return zoom_level;
+    return 1.0;
 }
 
 function zoomLevelToSelectedIndex(level)
